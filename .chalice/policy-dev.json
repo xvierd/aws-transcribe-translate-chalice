@@ -11,7 +11,7 @@
       ],
       "Resource": [
         "arn:aws:s3:::ml-transcribe/*",
-        "arn:aws:s3:::ml-transalate/*",
+        "arn:aws:s3:::ml-translate/*",
         "arn:*:logs:*:*:*"
       ]
     },

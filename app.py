@@ -10,7 +10,7 @@ transcribe_client = boto3.client('transcribe')
 
 s3_bucket = 'ml-transcribe'
 
-s3_bucket_output = 'ml-transalate'
+s3_bucket_output = 'ml-translate'
 
 
 @app.on_s3_event(bucket=s3_bucket, events=['s3:ObjectCreated:*'])
