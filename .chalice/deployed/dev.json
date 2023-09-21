@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "handler_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::608510892495:role/transcribe-translate-dev-handler",
+      "role_name": "transcribe-translate-dev-handler"
+    },
+    {
+      "name": "handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-west-2:608510892495:function:transcribe-translate-dev-handler"
+    },
+    {
+      "name": "handler-s3event",
+      "resource_type": "s3_event",
+      "bucket": "ml-transcribe",
+      "lambda_arn": "arn:aws:lambda:us-west-2:608510892495:function:transcribe-translate-dev-handler"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

@@ -1,0 +1,29 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:s3:::ml-transcribe/*",
+        "arn:aws:s3:::ml-transalate/*",
+        "arn:*:logs:*:*:*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "transcribe:StartTranscriptionJob",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "translate:TranslateText",
+      "Resource": "*"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "2.0",
+  "app_name": "transcribe-translate",
+  "stages": {
+    "dev": {
+      "autogen_policy": false,
+      "iam_policy_file": "policy-dev.json",
+      "api_gateway_stage": "api",
+      "iam_role_arn": "arn:aws:iam::608510892495:role/transcribe_role",
+      "region": "us-west-2"
+    }
+  }
+}
